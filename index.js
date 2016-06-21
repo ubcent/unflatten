@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (nodes) => {
-  var map = {}, node, roots = [];
+  let map = {}, node, roots = [];
   for (var i = 0; i < nodes.length; i += 1) {
     node = nodes[i];
     node.children = [];
