@@ -1,12 +1,12 @@
 {
   "name": "unflatten",
   "version": "1.0.0",
-  "description": "",
+  "description": "Package for conversion from flat to nested objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Dmitry Bondarchuk",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.13.1"
