@@ -28,7 +28,7 @@ console.log(nested);
 ### Input 
 
 ```javascript
-var nodes = [
+const nodes = [
 	{id: 1, parentId: 0},
 	{id: 2, parentId: 0},
 	{id: 3, parentId: 1},
@@ -42,7 +42,7 @@ var nodes = [
 ### Output
 
 ```javascript
-[
+const nested = [
 	{
     	"id": 1,
     	"parentId": 0,
