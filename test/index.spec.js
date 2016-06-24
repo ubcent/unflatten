@@ -27,16 +27,7 @@ describe('Test module', () => {
   });
 
   it('Must have all simple properties', () => {
-    for (let i = 0; i < nested.length; i++) {
-      expect(nested[i]).to.have.all.keys(['id', 'parentId', 'children']);
-    }
-  });
-
-  it('Must have property "children"', () => {
-    for (let i = 0; i < nested.length; i++) {
-      expect(nested).to.have.deep.property('[' + i + '].children')
-        .that.is.an('array');
-    }
+    nested.map(item => { return expect(item).to.have.all.keys(['id', 'parentId', 'children']); })
   });
 
   it('Arrays full lengths must be equal', () => {
