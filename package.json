@@ -18,6 +18,8 @@
   },
   "author": "Dmitry Bondarchuk",
   "license": "UNLICENSED",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.5.3"
   }
 }
