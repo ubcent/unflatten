@@ -57,12 +57,4 @@ describe('Test module', () => {
       .that.is.an('number')
       .that.equals(deepLength(nested));
   });
-
-  it('Consistency of input and output arrays check', () => {
-    const deepSearch = (item, array) => {
-      for(let i = 0; i < array.length; i++) {
-
-      }
-    };
-  });
 });
