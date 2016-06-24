@@ -28,10 +28,34 @@ describe('Test module', () => {
   });
 
   it('Must have all simple properties', () => {
-    expect(nested[0]).to.have.all.keys(['id', 'parentId', 'children']);
+    for (let i = 0; i < nested.length; i++) {
+      expect(nested[i]).to.have.all.keys(['id', 'parentId', 'children']);
+    }
   });
 
   it('Must have property "children"', () => {
-    expect(nested).to.have.deep.property('[0].children');
+    for (let i = 0; i < nested.length; i++) {
+      expect(nested).to.have.deep.property('[' + i + '].children')
+        .that.is.an('array');
+    }
+  });
+
+  it('Arrays full lengths must be equal', () => {
+    const deepLength = (array) => {
+      if(Object.prototype.toString.call( array ) !== '[object Array]')
+        return 0;
+
+      let length = array.length;
+
+      for(var i = 0; i < array.length; i++) {
+        length += deepLength(array[i].children);
+      }
+
+      return length;
+    };
+
+    expect(nodes).to.have.property('length')
+      .that.is.an('number')
+      .that.equals(deepLength(nested));
   });
 });
