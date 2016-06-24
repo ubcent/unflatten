@@ -1,5 +1,6 @@
 # unflatten
 
+[![Version](https://img.shields.io/npm/v/o-unflatten.svg)](https://www.npmjs.com/package/o-unflatten)
 [![Downloads](https://img.shields.io/npm/dt/o-unflatten.svg)](https://www.npmjs.com/package/o-unflatten)
 
 Package for conversion from flat to nested objects
