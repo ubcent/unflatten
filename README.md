@@ -79,7 +79,7 @@ const nested = [
         	}
     	]
 	}
-]
+];
 ```
 
 ### Tests
