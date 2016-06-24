@@ -41,16 +41,8 @@ describe('Test module', () => {
 
   it('Arrays full lengths must be equal', () => {
     const deepLength = (array) => {
-      if(Object.prototype.toString.call( array ) !== '[object Array]')
-        return 0;
-
-      let length = array.length;
-
-      for(let i = 0; i < array.length; i++) {
-        length += deepLength(array[i].children);
-      }
-
-      return length;
+      return array.length + array.map(item => {return deepLength(item.children)})
+          .reduce((sum, curr) => {return sum+curr;}, 0);
     };
 
     expect(nodes).to.have.property('length')
