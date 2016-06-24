@@ -7,7 +7,7 @@ Package for conversion from flat to nested objects
 
 ## Installation
 
-```javascript
+```sh
 npm install --save o-unflatten
 ```
 
@@ -87,6 +87,6 @@ const nested = [
 
 ### Tests
 
-```javascript
+```sh
 npm run test
 ```
