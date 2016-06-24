@@ -42,7 +42,7 @@ describe('Test module', () => {
   it('Arrays full lengths must be equal', () => {
     const deepLength = (array) => {
       return array.length + array.map(item => {return deepLength(item.children)})
-          .reduce((sum, curr) => {return sum+curr;}, 0);
+          .reduce((sum, curr) => {return sum + curr;}, 0);
     };
 
     expect(nodes).to.have.property('length')
