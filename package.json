@@ -1,6 +1,6 @@
 {
   "name": "o-unflatten",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Package for conversion from flat to nested objects",
   "keywords": [
     "unflatten",
