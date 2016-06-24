@@ -81,3 +81,9 @@ const nested = [
 	}
 ]
 ```
+
+### Tests
+
+```javascript
+npm run test
+```
