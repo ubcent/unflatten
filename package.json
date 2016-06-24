@@ -8,6 +8,10 @@
     "nested objects",
     "objects"
   ],
+  "engines": {
+    "node": "5.5.0",
+    "npm": "3.5.1"
+  },
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive"
@@ -20,6 +24,7 @@
   "license": "UNLICENSED",
   "dependencies": {},
   "devDependencies": {
+    "chai": "^3.5.0",
     "mocha": "^2.5.3"
   }
 }
