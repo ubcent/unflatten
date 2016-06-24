@@ -1,6 +1,5 @@
 'use strict';
 
-const cwd = process.cwd();
 const expect = require('chai').expect;
 const unflatten = require('../');
 
@@ -47,7 +46,7 @@ describe('Test module', () => {
 
       let length = array.length;
 
-      for(var i = 0; i < array.length; i++) {
+      for(let i = 0; i < array.length; i++) {
         length += deepLength(array[i].children);
       }
 
@@ -57,5 +56,13 @@ describe('Test module', () => {
     expect(nodes).to.have.property('length')
       .that.is.an('number')
       .that.equals(deepLength(nested));
+  });
+
+  it('Consistency of input and output arrays check', () => {
+    const deepSearch = (item, array) => {
+      for(let i = 0; i < array.length; i++) {
+
+      }
+    };
   });
 });
