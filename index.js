@@ -2,7 +2,7 @@
 
 module.exports = (nodes) => {
   let map = {}, node, roots = [];
-  for (var i = 0; i < nodes.length; i += 1) {
+  for (let i = 0; i < nodes.length; i += 1) {
     node = nodes[i];
     node.children = [];
     map[node.id] = i;
